@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayPropertyActivity"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+           >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/viewPropertyImage"
+                android:src="@drawable/logo2"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyTitle"
+                android:text="Title of the property"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAddProperty"
+                android:paddingTop="5dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyAddress"
+                android:text="Adress of the property"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:drawableLeft="@drawable/adress"
+                android:drawablePadding="8dp"
+                android:paddingTop="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyCategory"
+                android:text="Category of the property"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:drawableLeft="@drawable/category"
+                android:drawablePadding="8dp"
+                android:paddingTop="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyPurpose"
+                android:text="Purpose of the property"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:drawableLeft="@drawable/purpose"
+                android:drawablePadding="8dp"
+                android:paddingTop="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyPrice"
+                android:text="Price of the property"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                android:drawablePadding="8dp"
+                android:paddingTop="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPropertyDescription"
+                android:text="Description of the property"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:lines="3"
+                android:padding="5dp">
+            </TextView>
+            <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addtofavorite"
+        android:text="Add to favorite"
+        android:background="@color/colorRed"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+    </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facilities of the property"
+                android:textSize="25sp"
+                android:textColor="@color/colorAddProperty"
+                android:padding="5dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="2"
+                >
+
+                <TextView
+                    android:id="@+id/viewFacility1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_view_profile"
+                    android:text="Facility 1"
+                    android:textColor="#fff"
+                    android:layout_gravity="fill"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/viewFacility2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_view_profile"
+                    android:text="Facility 2"
+                    android:textColor="#fff"
+                    android:layout_gravity="fill"
+                    android:textSize="15sp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/viewFacility3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_view_profile"
+                    android:text="Facility 3"
+                    android:textColor="#fff"
+                    android:layout_gravity="fill"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="1"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/viewFacility4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_view_profile"
+                    android:text="Facility 4"
+                    android:textColor="#fff"
+                    android:layout_gravity="fill"
+                    android:textSize="15sp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </GridLayout>
+
+            <!--            -->
+<!--            //Initial plan for listing Facilities-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/recycleFacilities"-->
+<!--                android:paddingTop="10dp">-->
+
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rooms of the property"
+                android:textSize="25sp"
+                android:textColor="@color/colorAddProperty"
+                android:padding="5dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewPropertyRoomsText"
+                    android:text="Bed Rooms:"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewPropertyBedroom"
+                    android:text="No of Bed Roooms"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitchen Rooms:"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewPropertyKitchen"
+                    android:text="No of Kitchen Roooms"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Living Rooms:"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewPropertyLivingRoom"
+                    android:text="No of Living Roooms"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bath Rooms:"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewPropertyBathroom"
+                    android:text="No of Bath Roooms"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+
+            </GridLayout>
+
+<!--            //Initial plan for rooms-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/recycleRooms"-->
+<!--                android:paddingTop="10dp">-->
+
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Detils"
+                android:textSize="25sp"
+                android:textColor="@color/colorAddProperty"
+                android:padding="5dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+             <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewOwnerName"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="8dp"
+            android:text="Name"
+            android:paddingTop="5dp"
+            android:textSize="20dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewOwnerAddress"
+            android:drawableLeft="@drawable/ic_place_black_24dp"
+            android:drawablePadding="8dp"
+            android:text="Address"
+            android:paddingTop="5dp"
+            android:textSize="20dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+        </TextView>
+
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewOwnerEmail"
+        android:text="view Owner Email"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/colorAddProperty"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewOwnerPhone"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:text="Phone Number"
+        android:background="@color/colorAddProperty"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+    </Button>
+
+        </LinearLayout>
+
+</ScrollView>
